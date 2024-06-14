@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.Inicio {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 100;
+    font-size: 15px;
+    color: white;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    box-sizing: border-box;
+    background-image: url(img/cartographer-1920x1080.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+}
+
+.conteiner {
+    display:flex;
+    flex-direction: column;
+    margin: 8px 8px;
+    gap: 20px;
+}
+
+.conteiner__Botao {
+    display: flex;
+    flex-direction: column;
+    height: 65px;
+    width: 280px;
+}
+
+.conteiner__Botao:hover{
+    background-image: url(img/cartographer-transparente.png);
+}
+
+.info {
+    font-family: "Montserrat", sans-serif;
+    font-size: 50px;
+    font-weight: 100;
+    color: white;
+    text-decoration: none;
+    text-align:left;
+}
+
+.conteiner__imagem {
+    display: flex;
+    align-items: stretch;
+    justify-content:flex-end;
+}
+
+.imagem {
+    background-image: url(img/cartographer-transparente.png);
+    width: 320px;
+    height: 200px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 100;
+    font-size: 18px;
+    color: white;
+}
+
+.footer{
+    background-image: url(img/cartographer-1920x1080.png);
+    width: 100px;;
+    height: auto;
+}
+
+/*pagina Sobre Mim*/
+
+.conteiner_artigo{
+    display: flex;
+    align-items: center;
+    margin: 8px;
+    padding: 3px;
+    border-top: solid 1px white;
+}
+.artigo {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+    background-image: url(img/cartographer-transparente.png);
+    color: white;
+    padding: 10px;
+}
+
+/*pagina Projetos*/
+
+.conteiner_projetos{
+    display: flex;
+    align-items: center;
+    margin: 8px;
+    padding: 3px;
+    border-top: solid 1px white;
+    gap: 10px;
+}
+
+.projetos{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+    background-image: url(img/cartographer-transparente.png);
+    color: white;
+    padding: 10px;
+}
+
+.link_projetos{
+    text-decoration: none;
+    color: white;
+    font-weight: 300;
+    font-size: 12px;
+    padding: 5px;
+}
+
+.link_projetos:hover{
+    color: aqua;
+}
+
+.imagem_projetos{
+    width: 19px;
+    height: 19px;
+}
+
+.conteiner_links_projetos{
+    padding: 5px 0;
+}
+
+/*pagina contato*/
+
+.conteiner_contatos{
+    display: flex;
+    flex-direction: column;
+    margin: 8px;
+    padding: 3px;
+    border-top: solid 1px white;
+    background-image: url(img/cartographer-transparente.png);
+    background-size: cover
+}
+
+.titulo_contato{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 100;
+    font-size: 45px;
+    color: white;
+}
+
+.contatos{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+    color: white;
+    padding: 10px;
+}
+
+.conteiner_contatos_geral{
+    display: flex;
+    text-decoration: none;
+    color: white;
+}
+
+.imagem_contato{
+    width: 30px;
+    height: 30px;
+}
+
+.imagem_contato:hover{
+    background-image: url(img/cartographer-transparente.png);
+    border-radius: 2px;
+}
+
+.conteiner_midia_contato{
+    display: flex;
+    align-items: center;
+    margin: 8px;
+}
+
+.email{
+    font-family: "Montserrat",sans-serif;
+    font-weight: 100;
+    color: white;
+    margin: 8px;
+}
