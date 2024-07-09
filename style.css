@@ -89,16 +89,7 @@ body {
 @media (max-width: 720px){
     .footer{
         background-image: url(img/cartographer-1920x1080.png);
-        background-size: cover;
-        width:100%;
-        height:100%;
-    }
-}
-
-@media (max-width:600px) {
-    .footer{
-        background-image: url(img/cartographer-1920x1080.png);
-        width: 100%;
+        width:50%;
     }
 }
 
