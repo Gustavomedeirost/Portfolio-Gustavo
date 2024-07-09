@@ -79,20 +79,6 @@ body {
     height:auto;
 }
 
-@media (max-width: 800px) {
-    .footer{
-        background-image: url(img/cartographer-1920x1080.png);
-        width: 50%;
-    }
-}
-
-@media (max-width: 720px){
-    .footer{
-        background-image: url(img/cartographer-1920x1080.png);
-        width:50%;
-    }
-}
-
 /*pagina Sobre Mim*/
 
 .conteiner_artigo{
