@@ -3,31 +3,204 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Portfolio | Gustavo</title>
     <link rel="stylesheet" href="style.css">
-    
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        (function() {
+            emailjs.init('B2XTN_9-v5_2MZpbL');
+        })();
+    </script>
 </head>
 <body>
     <header>
-    </header>
-    <main class="conteiner">
-        <div class="conteiner__Botao">
-            <a class="info" href="index.html">Home</a>
-        </div>
-        <div class="conteiner__Botao">
-            <a class="info" href="sobreMim.html">Sobre Mim</a>
-        </div>
-        <div class="conteiner__Botao">
-            <a class="info" href="projetos.html">Projetos</a></div>
-        <div class="conteiner__Botao">
-            <a class="info" href="Contato.html">Contato</a>
-        </div>
+        <header>
+            <div class="wrapper">
+                <nav>
+                    <div class="conteiner_header">
+                    </div>
+                  <input type="checkbox" name="" id="toggle">
+                  <label for="toggle"><i class="material-icons"><img src="./menu/menu.png"></i></label>
+                  <div class="menu">
+                    <ul>
+                      <li><a href="#HOME">HOME</a></li>
+                      <li><a href="#ABOUT">ABOUT</a></li>
+                      <li><a href="#PROJECT">PROJECT</a></li>
+                      <li><a href="#CONTACT">CONTACT</a></li>
+                    </ul>      
+                  </div>
+                </nav>
+            </div>
+        </header>
+
+<!--------------- Main and homepage ------------->
+
+    <main>
+        <section id="HOME" class="homepage">
+            <div class="homepage-text">
+                <div class="homepage-text-welcome">
+                    <span>WELCOME!</span>
+                </div>
+                <div class="homepage-text-name">
+                    <h1>GUSTAVO MEDEIROS</h1>
+                </div>
+                <div class="homepage-text-info">
+                    <p>COMPUTER SCIENCE STUDENT AND ENTHUSIASM OF SOFTWARE DEVELOPMENT.</p>
+                </div>
+                <div class="social-icon">
+                    <div class="icon">
+                        <a href="https://github.com/Gustavomedeirost">
+                            <img src="/social media icons/github.png" alt="github">
+                        </a>
+                    </div>
+                    <div class="icon">
+                        <a href="https://www.linkedin.com/in/gustavo-medeirost">
+                            <img src="/social media icons/linkedin.png" alt="linkedin">
+                        </a>
+                    </div>
+                    <div class="icon">
+                        <a href="https://instagram.com/gustavomedeirost">
+                            <img src="social media icons/instagram.png" alt="instagram">
+                        </a>
+                    </div>
+                    <div class="icon">
+                        <a href="https://br.pinterest.com/gusmedeirost/">
+                            <img src="/social media icons/pinterest-logo.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section> 
+
+<!----------------- about -------------------->
+
+        <section id="ABOUT" class="content">
+            <div>
+                <h2>ABOUT.</h2>               
+            </div>
+            <div>
+                <h3>Introduction</h3>
+            </div>
+            <div>
+                <p>Born in a small town, specifically in São Jeronimo in Rio Grande do Sul, a computer science student at the Universidade do Vale do Rio dos Sinos, where I found myself after coming from a course and career transition from a complete chemistry technician and half a degree of chemical engineering.</p>
+            </div>
+            <div class="content-about-info">
+                <div>
+                    <img src="./about icons/hobby.png" alt="hobby">
+                    <h3>Hobby</h3>
+                    <p>Running</p>
+                    <p>Soccer</p>
+                    <p>Family</p>
+                </div>
+                <div>  
+                    <img src="./about icons/work-in-progress.png" alt="progress">
+                    <h3>Study in progress</h3>
+                    <p>Software Engineering</p>
+                </div>
+                <div>
+                    <img src="./about icons/certificate.png" alt="certificate">
+                    <h3>Certification</h3>
+                    <p>9+ Certification</p>
+                </div>
+            </div>
+            <div class="button">
+                <a href="resume/Resume Gustavo.pdf"> 
+                <button>DOWNLOAD RESUME</button>
+                </a>
+            </div>
+        </section> 
+
+<!---------------- Project ---------------->
+
+        <section id="PROJECT" class="content">
+            <div>
+                <h2>PROJECT.</h2>
+            </div>
+            <div class="content-project">
+                <div class="project-img">
+                    <a href="#">
+                        <img src="./project/Mobile App Screen Mockup, Mosaic.png" alt="project">
+                    </a>
+                    <p><span>Portfolio | Gustavo</span></p>
+                    <p>Personal portfolio with presentation, resume, projects and contact.<b></b></p>
+                    <div class="content-icon-project">
+                        <a class="link-icon-project" href="#">
+                            <button>GITHUB</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<!--------------- Contact ----------------->
+
+        <section id="CONTACT" class="content">
+            <div>
+                <h2>CONTACT.</h2>
+            </div>
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+    
+                <button type="submit">SEND</button>
+            </form>
+            <p id="statusMessage"></p>
+        </section>
     </main>
-    <div class="conteiner__imagem">
-        <p class="imagem">Design by <strong>Gustavo Medeiros</strong> &copy;</p>
-    </div>
+
+<!--------------- footer ------------->
+
     <footer>
-        <img class="footer" src="img/cartographer-1920x1080.png">
+        <div>
+            <img src="./favicon/favicon-32x32.png" alt="icon">
+            <p>Design by Gustavo</p>
+        </div>
+        <div class="footer-social-midia">
+            <div class="icon">
+                <a href="https://github.com/Gustavomedeirost">
+                    <img src="/social media icons/github.png" alt="github">
+                </a>
+            </div>
+            <div class="icon">
+                <a href="https://www.linkedin.com/in/gustavo-medeirost">
+                    <img src="/social media icons/linkedin.png" alt="linkedin">
+                </a>
+            </div>
+            <div class="icon">
+                <a href="https://instagram.com/gustavomedeirost">
+                    <img src="social media icons/instagram.png" alt="instagram">
+                </a>
+            </div>
+            <div class="icon">
+                <a href="https://br.pinterest.com/gusmedeirost/">
+                    <img src="/social media icons/pinterest-logo.png" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="footer-menu">
+        <nav>
+            <div>
+                <ul>
+                    <li><a href="#HOME">HOME</a></li>
+                    <li><a href="#ABOUT">ABOUT</a></li>
+                    <li><a href="#PROJECT">PROJECT</a></li>
+                    <li><a href="#CONTACT">CONTACT</a></li>
+                </ul>      
+          </div>
+        </nav>
+    </div>
+        <p>&copy; 2024. All Rights Reserved.</p>
     </footer>
+
+<!------------- script ---------------->
+
+    <script src="script.js"></script>
 </body>
 </html>

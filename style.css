@@ -1,199 +1,441 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
-*{
-    margin: 0;
-    padding: 0;
+
+/*-------------- variable ----------------*/
+
+:root{
+  --color-primary: #C2B8AC; 
+  --color-secondary:#fff;
+  --color-terciary: #333;
+  --hover-color: #4cae4c;
+  --hover-icons:#faf8f8;
 }
 
-.Inicio {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 100;
-    font-size: 15px;
-    color: white;
-    width: 100%;
+
+/*----------------- mobile header --------------*/
+
+.body{
+    margin:0rem;
+    padding: 0rem;
+    font-family: 'Raleway', sans-serif;
     height: 100%;
-}
-
-body {
-    box-sizing: border-box;
-    background-image: url(img/cartographer-1920x1080.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    margin: 0;
-    overflow:visible;
-}
-
-.conteiner {
-    display:flex;
-    flex-direction: column;
-    margin: 8px 8px;
-    gap: 20px;
-}
-
-.conteiner__Botao {
-    display: flex;
-    flex-direction: column;
-    height: 65px;
-    width: 280px;
-}
-
-.conteiner__Botao:hover{
-    background-image: url(img/cartographer-transparente.png);
-}
-
-.info {
-    font-family: "Montserrat", sans-serif;
-    font-size: 50px;
-    font-weight: 100;
-    color: white;
-    text-decoration: none;
-    text-align:left;
-}
-
-.conteiner__imagem {
-    display: flex;
-    align-items: stretch;
-    justify-content:flex-end;
-}
-
-.imagem {
-    background-image: url(img/cartographer-transparente.png);
-    width: 240px;
-    height: 200px;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 200;
-    font-size: 15px;
-    color: white;
-}
-
-.footer{
-    background-image: url(img/cartographer-1920x1080.png);
-    background-size: cover;
     width: 100%;
-    height:auto;
 }
 
-@media (max-width: 720px){
-    .footer{
-        background-image: url(img/cartographer-1920x1080.png);
-        background-size: cover;
-        width:100%;
-        height:100%;
+.wrapper {
+    width: 100%;
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 0rem auto;
+    color: var(--color-terciary);
+  }
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-secondary);
+    padding: 1rem 1.5rem;
+    border-radius: 0.4rem;
+  }
+  nav .logo {
+    font-weight: 100;
+  }
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+  }
+  nav a {
+    text-decoration: none;
+    color:var(--color-terciary);
+  }
+  nav #toggle,
+  nav label {
+    display: none;
+  }
+  
+ .conteiner_header{
+    display: flex;
+    gap: 0.625rem;
+ }
+
+
+ h1{
+    margin: 0;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+  @media (max-width: 40.625em) {
+
+    nav .menu {
+      width: 100%;
+      height: 0rem;
+      overflow: hidden;
     }
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+      padding: 0.125rem 0rem;
+    }
+    nav label {
+      display: inline-flex;
+      color: rgb(150, 132, 132);
+      cursor: pointer;
+    }
+
+    nav #toggle:checked ~ .menu {
+      height: 100%;
+    }
+    
+}
+.conteiner_header p{
+  color: var(--color-terciary);
+  font-size: 0.75rem;
 }
 
-/*pagina Sobre Mim*/
 
-.conteiner_artigo{
-    display: flex;
-    align-items: center;
-    margin: 8px;
-    padding: 3px;
-    border-top: solid 1px white;
-}
-.artigo {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 100;
-    font-size: 20px;
-    background-image: url(img/cartographer-transparente.png);
-    color: white;
-    padding: 10px;
+/*----------------- main -------------------*/
+
+
+main{
+  padding: 1rem;
 }
 
-/*pagina Projetos*/
 
-.conteiner_projetos{
-    display: flex;
-    align-items: center;
-    margin: 8px;
-    padding: 3px;
-    border-top: solid 1px white;
-    gap: 10px;
+/*----------------- page home ---------------*/
+
+.homepage {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items:flex-start;
+  justify-content: flex-start;
 }
 
-.projetos{
-    font-family: "Montserrat", sans-serif;
-    font-weight: 100;
-    font-size: 20px;
-    background-image: url(img/cartographer-transparente.png);
-    color: white;
-    padding: 10px;
+.homepage-text-welcome{
+  padding: 1.25rem 0;
 }
 
-.link_projetos{
-    text-decoration: none;
-    color: white;
-    font-weight: 300;
-    font-size: 12px;
-    padding: 5px;
+.homepage-text-welcome span{
+  font-size: 2.187rem;
+  background-color:var(--color-primary);
+  color: var(--color-secondary);
+  border-radius:2.187rem;
+  padding:0.50rem;
+  box-shadow: 0rem 0.125rem 0.3125rem 0rem rgba(0, 0, 0, 0.25);
+
 }
 
-.link_projetos:hover{
-    color: aqua;
+.homepage-text-name h1{
+  font-size: 5.625rem;
+  color: var(--color-terciary);
 }
 
-.imagem_projetos{
-    width: 19px;
-    height: 19px;
+.homepage-text-info {
+  font-size: 0.9375rem;
 }
 
-.conteiner_links_projetos{
-    padding: 5px 0;
+
+/*--------------- social icons ---------------*/
+
+.social-icon{
+  display: flex;
+  gap: 0.9375rem;
+  padding: 0.625rem 0;
 }
 
-/*pagina contato*/
-
-.conteiner_contatos{
-    display: flex;
-    flex-direction: column;
-    margin: 8px;
-    padding: 3px;
-    border-top: solid 1px white;
-    background-image: url(img/cartographer-transparente.png);
-    background-size: cover
+.icon{
+  border-radius: 50%;
+  box-shadow: 0rem 0.125rem 0.3125rem 0rem rgba(0, 0, 0, 0.15);
 }
 
-.titulo_contato{
-    font-family: "Montserrat", sans-serif;
-    font-weight: 100;
-    font-size: 45px;
-    color: white;
+.icon:hover{
+  background-color:var(--hover-icons);
 }
 
-.contatos{
-    font-family: "Montserrat", sans-serif;
-    font-weight: 100;
-    font-size: 20px;
-    color: white;
-    padding: 10px;
+
+/*---------------- scroll page main -----------------*/
+
+
+.content{
+  padding: 2rem;
+  margin-bottom: 2rem;
+  opacity: 0;
+  transform: translateY(3.125rem);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+  color: var(--color-terciary);
 }
 
-.conteiner_contatos_geral{
-    display: flex;
-    text-decoration: none;
-    color: white;
+.content.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
-.imagem_contato{
-    width: 30px;
-    height: 30px;
+/*------------------ About -------------------*/
+
+content div h2 {
+  font-size: 1.875rem;
+  font-weight: 600;
 }
 
-.imagem_contato:hover{
-    background-image: url(img/cartographer-transparente.png);
-    border-radius: 2px;
+.content-about-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 1.25rem;
 }
 
-.conteiner_midia_contato{
-    display: flex;
-    align-items: center;
-    margin: 8px;
+.content-about-info div {
+  width: 18.75rem;
+  height: 18.75rem;
+  margin: 0.625rem;
+  padding: 2.5rem;
+  text-align: center;
+  max-width: 12.5rem;
+  background-color: var(--color-primary);
+  border-radius: 1.25rem;
+  box-shadow: 0rem 0.125rem 0.3125rem 0rem rgba(0, 0, 0, 0.25);
+
+}
+.content-about-info h3{
+  color: var(--color-secondary);
 }
 
-.email{
-    font-family: "Montserrat",sans-serif;
-    font-weight: 100;
-    color: white;
-    margin: 8px;
+.content-about-info p {
+  margin-top: 0.625rem;
+  color:var(--color-secondary);
+}
+
+/*----------------- button -----------------*/
+
+.button{
+  display: flex;
+  justify-content: end;
+  padding: 0.625rem;
+}
+
+.button a button{
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.625rem;
+  padding: 0.625rem;
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+  border-radius: 0.625rem;
+  border: none;
+  box-shadow: 0rem 0.125rem 0.3125 0rem rgba(0, 0, 0, 0.25);
+}
+
+.button a button:hover{
+  background-color: var(--hover-color);
+}
+
+/*----------------- project ------------------*/
+
+.content-project{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.project-img img{
+  width: 50%;
+  box-shadow: 0rem 0.125rem 0.3125rem 0rem rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+}
+
+.project-img span{
+  font-weight: 900;
+  font-size: 1.25rem;
+}
+
+.content-icon-project button{
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.625rem;
+  padding: 0.625rem;
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+  border-radius: 0.625rem;
+  box-shadow: 0rem 0.125rem 0.3125rem 0rem rgba(0, 0, 0, 0.25);
+}
+
+/*------------------ contact------------------*/
+
+.section {
+  padding: 6.25rem 1.25rem;
+  text-align: center;
+  min-height: 100vh;
+  background-color: var(--hover-color);
+}
+
+.home {
+  background: var(--color-terciary);
+}
+
+.about {
+  background: var(--color-terciary);
+}
+
+.contact {
+  background:var(--color-primary);
+}
+
+form {
+  max-width: 600px;
+  margin: 0.625rem 0.625rem auto;
+}
+
+label {
+  display: block;
+  margin: 1.25rem 0 0.25rem;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 0.625rem;
+  margin-bottom: 1.25rem;
+  border: 0.0625rem solid var(--color-primary);
+  border-radius: 0.25rem;
+}
+
+button {
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.625rem;
+  padding: 0.625rem;
+  background-color:var(--color-primary);
+  color:var(--color-secondary);
+  border-radius: 0.625rem;
+  border: none;
+  box-shadow: 0rem 0.125rem 0.3125rem 0rem rgba(0, 0, 0, 0.25);
+}
+
+button:hover {
+  background-color:var(--hover-color);
+}
+
+#statusMessage {
+  margin-top: 20px;
+  text-align: center;
+}
+
+/*------------------ footer ------------------*/
+
+footer{
+  font-size: 0.9375rem;
+  background-color: var(--color-secondary);
+  color: var(--color-terciary);
+  padding: 2rem 0;
+  text-align: center;
+  width: 100%;
+  bottom: 0;
+}
+
+footer div p{
+  color: var(--color-primary);
+}
+
+.footer-social-midia{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.625rem;
+}
+
+.footer-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+/* Responsividade */
+
+@media (max-width: 48rem) {
+    header {
+      padding: 0.5rem 0;
+    }
+
+    main {
+      padding: 0.5rem;
+    }
+
+    .content {
+      padding: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    button{
+      border: none;
+    }
+
+    .homepage-text-welcome span{
+      font-size: 1.875rem;
+      background-color:var(--color-primary);
+      color: var(--color-secondary);
+      border-radius: 0.9375rem;
+      padding: 0.375rem;
+    }
+
+    .homepage-text-name h1{
+      font-size: 3.75rem;
+    }
+
+    .content-about-info div{
+      width: 100%;
+      height: 100%;
+      margin: 0.625rem;
+      padding: 2.5rem;
+      text-align: center;
+      max-width: 100%;
+      background-color: var(--color-primary);
+      border-radius: 1.25rem;
+      box-shadow: 0rem 0.125rem 0.3125rem 0rem rgba(0, 0, 0, 0.25);  
+    }
+
+    .project-img img{
+      width: 100%;
+      box-shadow: 0rem 0.125rem 0.3125rem 0rem rgba(0, 0, 0, 0.25);
+      border-radius: 1.25rem;
+    }
+    
+}
+
+@media (max-width: 30rem) {
+    header {
+      font-size: 1rem;
+    }
+
+    .content {
+      padding: 0.5rem;
+    }
+
+    button{
+      border: none;
+    }
+    .homepage-text-welcome span{
+      font-size: 0.9375rem;
+      background-color:var(--color-primary);
+      color: var(--color-secondary);
+      border-radius: 0.625rem;
+      padding: 0.25rem;
+    }
+
+    .homepage-text-name h1{
+      font-size: 2.5rem;
+    }
+
+    .content-about-info div{
+      width: 100%;
+      height: 100%;
+    }
+
+    .project-img img{
+      width: 100%;
+      box-shadow: 0rem 0.125rem 0.3125rem 0rem rgba(0, 0, 0, 0.25);
+      border-radius: 1.25rem;
+    }
+
+    footer{
+      width: 100%;
+    }
 }
