@@ -145,18 +145,7 @@ main{
   padding: 0.625rem 0;
 }
 
-.icon{
-  border-radius: 50%;
-  box-shadow: 0rem 0.125rem 0.3125rem 0rem rgba(0, 0, 0, 0.15);
-}
-
-.icon:hover{
-  background-color:var(--hover-icons);
-}
-
-
 /*---------------- scroll page main -----------------*/
-
 
 .content{
   padding: 2rem;
