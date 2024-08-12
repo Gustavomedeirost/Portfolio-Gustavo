@@ -1,15 +1,23 @@
-//Download button
+/*------------- Download button ------------*/
 
 function downloadFile() {
     const link = document.createElement('a');
-    link.href = "./resume/Resume Gustavo.pdf";
+    link.href = "./resume/Resume Gustavo Medeiros.pdf";
     link.download = 'resume.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
 }
+function downloadFile() {
+    const link = document.createElement('lettercover');
+    link.href = "./resume/apresentação.pdf";
+    link.download = 'lettercover.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+}
 
-//Scroll screen 
+/*----------- Scroll screen --------------*/
 
 document.addEventListener('DOMContentLoaded', function() {
     let sections = document.querySelectorAll('.content');
@@ -38,27 +46,16 @@ window.addEventListener('scroll', function() {
     }
 });
 
-//emailjs
 
-document.getElementById('contactForm').addEventListener('submit', function(event) {
-    event.preventDefault();
+/* ----- TYPING EFFECT ----- */
 
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const message = document.getElementById('message').value;
+const palavras = ["WELCOME!", "BEM-VINDO!", "BENVENUTO!", "¡BIENVENIDO!", "BIENVENU!",];
+let index = 0;
+const palavraElement = document.getElementById("alternar-palavra");
 
-    const statusMessage = document.getElementById('statusMessage');
-    statusMessage.textContent = 'Enviando...';
+function alternarPalavra() {
+    palavraElement.textContent = palavras[index];
+    index = (index + 1) % palavras.length;
+}
 
-    emailjs.send('YB2XTN_9-v5_2MZpbL', 'service_m5ch4un', {
-        from_name: name,
-        from_email: email,
-        message: message
-    })
-    .then(function(response) {
-        statusMessage.textContent = 'Mensagem enviada com sucesso!';
-        document.getElementById('contactForm').reset();
-    }, function(error) {
-        statusMessage.textContent = 'Ocorreu um erro ao enviar a mensagem.';
-    });
-});
+setInterval(alternarPalavra, 1200);
