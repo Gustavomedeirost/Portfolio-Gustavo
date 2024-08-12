@@ -6,15 +6,8 @@
     <title>Portfolio | Gustavo</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
-    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
-    <script>
-        (function() {
-            emailjs.init('B2XTN_9-v5_2MZpbL');
-        })();
-    </script>
 </head>
 <body>
-    <header>
         <header>
             <div class="wrapper">
                 <nav>
@@ -40,35 +33,13 @@
         <section id="HOME" class="homepage">
             <div class="homepage-text">
                 <div class="homepage-text-welcome">
-                    <span>WELCOME!</span>
+                    <span id="alternar-palavra">WELCOME!</span>
                 </div>
                 <div class="homepage-text-name">
                     <h1>GUSTAVO MEDEIROS</h1>
                 </div>
                 <div class="homepage-text-info">
                     <p>COMPUTER SCIENCE STUDENT AND ENTHUSIASM OF SOFTWARE DEVELOPMENT.</p>
-                </div>
-                <div class="social-icon">
-                    <div class="icon">
-                        <a href="https://github.com/Gustavomedeirost">
-                            <img src="/social media icons/github.png" alt="github">
-                        </a>
-                    </div>
-                    <div class="icon">
-                        <a href="https://www.linkedin.com/in/gustavo-medeirost">
-                            <img src="/social media icons/linkedin.png" alt="linkedin">
-                        </a>
-                    </div>
-                    <div class="icon">
-                        <a href="https://instagram.com/gustavomedeirost">
-                            <img src="social media icons/instagram.png" alt="instagram">
-                        </a>
-                    </div>
-                    <div class="icon">
-                        <a href="https://br.pinterest.com/gusmedeirost/">
-                            <img src="/social media icons/pinterest-logo.png" alt="">
-                        </a>
-                    </div>
                 </div>
             </div>
         </section> 
@@ -87,26 +58,26 @@
             </div>
             <div class="content-about-info">
                 <div>
-                    <img src="./about icons/hobby.png" alt="hobby">
-                    <h3>Hobby</h3>
+                    <h3>Hobbies</h3>
                     <p>Running</p>
                     <p>Soccer</p>
                     <p>Family</p>
                 </div>
                 <div>  
-                    <img src="./about icons/work-in-progress.png" alt="progress">
                     <h3>Study in progress</h3>
                     <p>Software Engineering</p>
                 </div>
                 <div>
-                    <img src="./about icons/certificate.png" alt="certificate">
                     <h3>Certification</h3>
                     <p>9+ Certification</p>
                 </div>
             </div>
-            <div class="button">
-                <a href="resume/Resume Gustavo.pdf"> 
-                <button>DOWNLOAD RESUME</button>
+            <div class="button-conteiner">
+                <a href="./resume/Resume Gustavo Medeiros.pdf"> 
+                <button class="button-geral">DOWNLOAD CV</button>
+                </a>
+                <a id="lettercover" href="./resume/apresentação.pdf"> 
+                <button class="button-geral">COVER LETTER</button>
                 </a>
             </div>
         </section> 
@@ -122,11 +93,11 @@
                     <a href="#">
                         <img src="./project/Mobile App Screen Mockup, Mosaic.png" alt="project">
                     </a>
-                    <p><span>Portfolio | Gustavo</span></p>
+                    <p><b>Portfolio | Gustavo</b></p>
                     <p>Personal portfolio with presentation, resume, projects and contact.<b></b></p>
                     <div class="content-icon-project">
-                        <a class="link-icon-project" href="#">
-                            <button>GITHUB</button>
+                        <a class="link-icon-project" href="https://github.com/Gustavomedeirost/made-by-gustavo-medeiros">
+                            <button class="button-geral">GITHUB</button>
                         </a>
                     </div>
                 </div>
@@ -139,19 +110,16 @@
             <div>
                 <h2>CONTACT.</h2>
             </div>
-            <form id="contactForm">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-    
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-    
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-    
-                <button type="submit">SEND</button>
-            </form>
-            <p id="statusMessage"></p>
+            <div class="contato">
+                <div class="contato-email">
+                    <p><b>SEND ME AN E-MAIL:</b></p>
+                    <p>gusmedeirost@gmail.com</p>
+                </div>
+                <div class="contato-qrcode">
+                    <img class="contato-img" src="contato/IMG_1875.jpg" alt="QRcode">
+                    <p>QR CODE</p>
+                </div>
+            </div>
         </section>
     </main>
 
@@ -196,7 +164,7 @@
           </div>
         </nav>
     </div>
-        <p>&copy; 2024. All Rights Reserved.</p>
+        <p>&copy;2024 Design by Gustavo. All Rights Reserved.</p>
     </footer>
 
 <!------------- script ---------------->
