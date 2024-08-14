@@ -1,31 +1,16 @@
-<h1 align="center" id="title">Portfolio | Gustavo</h1>
+# Portfolio | Gustavo
 
-<p align="center"><img src="https://socialify.git.ci/Gustavomedeirost/made-by-gustavo-medeiros/image?font=Inter&amp;forks=1&amp;issues=1&amp;language=1&amp;name=1&amp;owner=1&amp;pattern=Solid&amp;pulls=1&amp;stargazers=1&amp;theme=Light" alt="project-image"></p>
+## Description
+Personal portfolio with presentation, resume, projects and contact.
 
-<p id="description">Personal portfolio with presentation resume projects and contact.</p>
-
-<p align="center"><img src="https://img.shields.io/badge/HTML5-E34F26.svg?style=for-the-badge&amp;logo=HTML5&amp;logoColor=white" alt="shields"><img src="https://img.shields.io/badge/CSS3-1572B6.svg?style=for-the-badge&amp;logo=CSS3&amp;logoColor=white" alt="shields"><img src="https://img.shields.io/badge/JavaScript-F7DF1E.svg?style=for-the-badge&amp;logo=JavaScript&amp;logoColor=black" alt="shields"><img src="https://img.shields.io/badge/Vercel-000000.svg?style=for-the-badge&amp;logo=Vercel&amp;logoColor=white" alt="shields"><img src="https://img.shields.io/badge/GitHub-181717.svg?style=for-the-badge&amp;logo=GitHub&amp;logoColor=white" alt="shields"></p>
-
-<h2>🚀 Demo</h2>
-
-[https://gustavomedeiros.dev.br/](https://gustavomedeiros.dev.br/)
-
-<h2>Project Screenshots:</h2>
-
-<img src="https://files.fm/u/sp6nssvsam" alt="project-screenshot" width="400" height="400/">
-
-  
-  
-<h2>💻 Built with</h2>
-
-Technologies used in the project:
-
+## Technologies used
 *   HTML
 *   CSS
 *   JavaScript
 *   Vercel
 *   Visual Studio Code
+## Visuals
+<img src="./project/Mobile App Screen Mockup, Mosaic.png" alt="project">
 
-<h2>🛡️ License:</h2>
-
-This project is licensed under the LICENSE.md
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
