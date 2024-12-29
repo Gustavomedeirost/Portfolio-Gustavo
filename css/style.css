@@ -298,8 +298,8 @@ span{
         align-items: center;
     }
 
-    .gustavo, .medeiros {
-        font-size: 40px; /* Reduz tamanho da fonte */
+    .gustavo p {
+        font-size: 35px; /* Reduz tamanho da fonte */
     }
 
     .pagina-inicial-descricao {
