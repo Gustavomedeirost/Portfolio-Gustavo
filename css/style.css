@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html, body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+  }
+
+  body {
+    position: relative;
+}
+
+
+/*--------------- Pagina Inicial -------------*/
+
+.pagina-inicial{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+}
+
+.rede-social-inicial{
+    display: flex;
+    justify-content: center;
+    font-family: 'roboto mono', serif;
+    font-weight: 300;
+}
+
+.linkedin{
+    padding-top: 30px;
+    margin: 0 15px;
+}
+
+.linkedin a{
+    color: #808080;
+    text-decoration: none;
+}
+
+.linkedin a:hover{
+    color: black;
+}
+
+.github{
+    padding-top: 30px;
+    margin: 0 15px;
+}
+
+.github a{
+    color: #808080;
+    text-decoration: none;
+}
+
+.github a:hover{
+    color: black;
+}
+
+.dev-community{
+    padding-top: 30px;
+    margin: 0 15px;
+}
+
+.dev-community a{
+    color: #808080;
+    text-decoration: none;
+}
+
+.dev-community a:hover{
+    color: black;
+}
+
+
+.pagina-inicial-principal{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    margin-left: 40%;
+    height: 100vh;
+}
+
+
+.gustavo p{
+    font-size: 125px;
+    font-family: 'roboto';
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 1;
+}
+
+.pagina-inicial-descricao{
+    font-size: 17px;
+    font-family: 'roboto';
+    padding-top: 30px;
+}
+
+.pagina-inicial-portfolio{
+    padding-top: 30px;
+}
+
+.pagina-inicial-portfolio p{
+    font-family: 'roboto mono';
+    font-size: 12px;
+    color: #808080;
+}
+
+
+.pagina-inicial-scroll-down{
+    padding-top: 30px;
+}
+.pagina-inicial-scroll-down p{
+    font-family: 'roboto mono';
+    color: black;
+    font-family: 10px;
+}
+
+.pagina-dois{
+    height: 100vh;
+}
+
+.pagina-dois-titulo{
+    margin-left: 10px;
+}
+
+.pagina-dois-titulo h1{
+    font-family: 'roboto';
+    font-size: 50px;
+}
+.pagina-dois-titulo h1:hover{
+    color: black;
+}
+
+.pagina-dois-conteudo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pagina-dois-empresa {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-left: 10px;
+}
+
+.pagina-dois-empresa a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-family: 'roboto mono';
+    font-size: 30px;
+    color: #808080;
+}
+
+.pagina-dois-empresa a:hover {
+    color: black;
+}
+
+.pagina-dois-empresa p {
+    font-family: 'roboto mono';
+    font-size: 15px;
+}
+
+.pagina-dois-imagem img {
+    width: 60%;
+}
+
+span{
+    font-family: 'roboto mono';
+    font-size: 25px;
+    font-weight: 300;
+    color: #808080;
+}
+
+.pagina-tres{
+    width: 100%;
+    height: 100vh;
+}
+
+.pagina-tres-titulo{
+    margin-left: 10px;
+    padding-top: 40px;
+}
+
+.pagina-tres-titulo h1{
+    font-family: 'roboto';
+    font-size: 50px;
+}
+
+.pagina-tres-projeto-portfolio{
+    width: 50%;
+    margin-left: 10px;
+    padding-top: 40px;
+}
+
+.pagina-tres-projeto-portfolio a, p{
+    font-family: 'roboto mono';
+}
+
+.pagina-tres-projeto-portfolio a {
+    text-decoration: none;
+    font-size: 30px;
+    color: #808080;
+}
+
+.pagina-tres-projeto-portfolio a:hover{
+    color: black;
+}
+
+.pagina-tres-projeto-bikcraft{
+    width: 50%;
+    margin-left: 10px;
+    padding-top: 40px;
+}
+
+.pagina-tres-projeto-bikcraft a{
+    text-decoration: none;
+    font-size: 30px;
+    color: #808080;
+    font-family: 'roboto mono';
+}
+
+.pagina-tres-projeto-bikcraft a:hover{
+    color: black;
+}
+
+.pagina-quatro{
+    width: 100%;
+    height: 100vh;
+}
+
+
+.pagina-quatro-titulo{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.pagina-quatro-titulo h1{
+    font-family: 'roboto';
+    font-size: 70px;
+    margin-left: 10px;
+}
+
+.pagina-quatro-texto{
+    display: flex;
+    flex-direction: column;
+}
+
+.pagina-quatro-texto p{
+    padding-top: 30px;
+    margin-left: 10px;
+    font-weight: 200;
+}
+
+/* Estilo inicial para fade-in normal (cima para baixo) */
+.pagina-inicial, .pagina-dois, .pagina-tres, .pagina-quatro {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+/* Estilo para fade-in normal (ativado pelo JavaScript) */
+.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Estilo inicial para fade-in reverso (baixo para cima) */
+.fade-in-up {
+    opacity: 1;
+    transform: translateY(-20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+
+
+/* Responsividade */
+
+/* Estilo para telas menores (celulares) */
+@media screen and (max-width: 768px) {
+    .rede-social-inicial{
+        display: flex;
+        justify-content: start;
+        flex-direction: column;
+        font-family: 'roboto mono', serif;
+        font-weight: 300;
+    }
+
+    .pagina-inicial-principal {
+        margin-left: 3%; /* Reduz a margem para centralizar melhor */
+        align-items: center;
+    }
+
+    .gustavo, .medeiros {
+        font-size: 40px; /* Reduz tamanho da fonte */
+    }
+
+    .pagina-inicial-descricao {
+        font-size: 14px; /* Ajusta fonte da descrição */
+        text-align: center;
+    }
+
+    .pagina-inicial-portfolio p, .pagina-inicial-scroll-down p {
+        font-size: 10px;
+        text-align: center;
+    }
+
+    .pagina-dois-titulo h1{
+        font-size: 25px;
+    }
+
+    .pagina-dois-conteudo {
+        flex-direction: column; /* Coloca os elementos em coluna */
+        align-items: center;
+        padding-top: 10px;
+    }
+
+    .pagina-dois-empresa {
+        width: 90%; /* Ajusta largura para caber na tela */
+        margin-left: 0;
+        text-align: start;
+    }
+
+    .pagina-dois-imagem img {
+        width: 40%; /* Ajusta tamanho da imagem */
+        margin-left: 25%;
+        padding-top: 10%;
+    }
+
+    .pagina-dois-empresa a{
+        font-size: 20px;
+        padding-top: 10%;
+    }
+
+    .pagina-tres-titulo h1{
+        font-size: 25px;
+    }
+
+
+    .pagina-tres-projeto-portfolio, .pagina-tres-projeto-bikcraft {
+        width: 90%; /* Ajusta largura dos projetos */
+        margin-left: 10px;
+        text-align: start;
+        align-items: center;
+    }
+
+    .pagina-tres-projeto-portfolio a, .pagina-tres-projeto-bikcraft a {
+        font-size: 20px;
+    }
+
+
+    .pagina-quatro-titulo h1 {
+        font-size: 25px; /* Reduz tamanho do título */
+        text-align: start;
+        padding-top: 10%;
+    }
+
+    .pagina-quatro-texto p {
+        font-size: 15px; /* Ajusta tamanho do texto */
+        font-weight: 400;
+        text-align: start;
+        align-items: center;
+
+    }
+}
+
+/* Estilo para telas intermediárias (tablets) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .pagina-inicial-principal {
+        margin-left: 20%; /* Ajusta margem para tablets */
+    }
+
+    .gustavo, .medeiros {
+        font-size: 90px; /* Ajusta tamanho da fonte */
+    }
+
+    .pagina-dois-conteudo {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .pagina-dois-empresa {
+        width: 40%; /* Ajusta largura */
+    }
+
+    .pagina-tres-projeto-portfolio, .pagina-tres-projeto-bikcraft {
+        width: 45%;
+    }
+
+    .pagina-quatro-titulo h1 {
+        font-size: 50px;
+    }
+}
