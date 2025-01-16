@@ -89,7 +89,7 @@
 .gustavo p{
     font-size: 125px;
     font-family: 'roboto';
-    font-weight: 500;
+    font-weight: 300;
     letter-spacing: 0;
     line-height: 1;
 }
@@ -117,7 +117,7 @@
 .pagina-inicial-scroll-down p{
     font-family: 'roboto mono';
     color: black;
-    font-family: 10px;
+    font-family: 12px;
 }
 
 .pagina-dois{
@@ -178,10 +178,7 @@ span{
     color: #808080;
 }
 
-.pagina-tres{
-    width: 100%;
-    height: 100vh;
-}
+
 
 .pagina-tres-titulo{
     margin-left: 10px;
@@ -213,26 +210,27 @@ span{
     color: black;
 }
 
-.pagina-tres-projeto-bikcraft{
+.pagina-projeto {
     width: 50%;
     margin-left: 10px;
     padding-top: 40px;
 }
 
-.pagina-tres-projeto-bikcraft a{
+.pagina-projeto a{
     text-decoration: none;
     font-size: 30px;
     color: #808080;
     font-family: 'roboto mono';
 }
 
-.pagina-tres-projeto-bikcraft a:hover{
+.pagina-projeto a:hover{
     color: black;
 }
 
 .pagina-quatro{
     width: 100%;
     height: 100vh;
+    margin-top: 40px;
 }
 
 
@@ -299,7 +297,7 @@ span{
     }
 
     .gustavo p {
-        font-size: 35px; /* Reduz tamanho da fonte */
+        font-size: 35px;/* Reduz tamanho da fonte */
     }
 
     .pagina-inicial-descricao {
@@ -351,10 +349,9 @@ span{
         align-items: center;
     }
 
-    .pagina-tres-projeto-portfolio a, .pagina-tres-projeto-bikcraft a {
+    .pagina-projeto a {
         font-size: 20px;
     }
-
 
     .pagina-quatro-titulo h1 {
         font-size: 25px; /* Reduz tamanho do título */
@@ -372,13 +369,14 @@ span{
 }
 
 /* Estilo para telas intermediárias (tablets) */
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
     .pagina-inicial-principal {
-        margin-left: 20%; /* Ajusta margem para tablets */
+        display: flex;
+        justify-content: center;
     }
 
-    .gustavo, .medeiros {
-        font-size: 90px; /* Ajusta tamanho da fonte */
+    .gustavo p {
+        font-size: 80px; /* Ajusta tamanho da fonte */
     }
 
     .pagina-dois-conteudo {
@@ -390,11 +388,33 @@ span{
         width: 40%; /* Ajusta largura */
     }
 
-    .pagina-tres-projeto-portfolio, .pagina-tres-projeto-bikcraft {
+    .pagina-projeto {
         width: 45%;
     }
 
     .pagina-quatro-titulo h1 {
         font-size: 50px;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 844px) {
+  
+    .gustavo p {
+        font-size: 50px; /* Ajusta tamanho da fonte */
+    }
+    .pagina-projeto{
+        width: 80%;
+    }
+    .pagina-projeto a{
+        font-size: 20px;
+    }
+    .pagina-projeto p{
+        font-size: 15px;
+    }
+    .pagina-quatro-titulo h1 {
+        font-size: 50px;
+    }
+    .pagina-quatro-titulo p{
+        margin-bottom: 20px;
     }
 }
